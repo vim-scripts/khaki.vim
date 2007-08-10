@@ -1,0 +1,29 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1987
+
+This colour scheme was created primarily because there seems to be few
+(if any) that take the trouble to appear the same in gui and cterm environments.
+
+Secondly, most cterm colour schemes seem to use excessively strong colours
+in psychotic combinations compared to the gui schemes. This scheme
+strives to follow the guidelines described in "Color Theory for Developers"
+       http://www.devsource.com/article2/0,1895,2069736,00.asp
+for a softer appearance like more modern gui schemes.
+
+Finally, some terminals render bold and italic fonts badly, so those attributes have been avoided.
+
+Features:
+    - Optimized for 256 colour palette, then converted to gui.
+    - Identical colour rendition in both gui and cterm environments.
+    - Low-contrast colours keep it "REAL", avoiding psychotic edit sessions.
+    - Avoids use of terminal attributes {bold italic etc}, with the
+      exception of 'underline' used with the 'Underlined' group-name.
+
+Testing:
+    Tested with the following programs (256 colour versions), which render identically to gvim:-
+        gnu-screen (compiled with --enable-colors256 option)
+        xterm
+        gnome-terminal
+
+        konsole (version 1.6.5) renders slightly darker colours for some unknown reason.
+            See KDE Bug 138237: Color cube incorrect for xterm-256color mode (patch)
+
